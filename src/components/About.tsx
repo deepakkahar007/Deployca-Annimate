@@ -1,18 +1,17 @@
 import { motion } from "framer-motion";
-import styles from "../styles";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { TypingText } from "./TypingText";
 
 const About = () => {
   return (
-    <section className={`${styles.paddings} relative z-10`}>
+    <section className={`xs:p-8 relative z-10 px-6 py-12 sm:p-16`}>
       <div className="gradient-02 z-0" />
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+        className={`mx-auto flex w-full flex-col items-center justify-center 2xl:max-w-[1280px]`}
       >
         <TypingText title={"| About Deployca"} textStyles={"text-center"} />
         <motion.p

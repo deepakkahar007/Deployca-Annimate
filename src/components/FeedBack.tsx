@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "../styles";
 import { staggerContainer, fadeIn, zoomIn } from "../utils/motion";
-import { TypingText, TitleText } from "./TypingText";
 
 const FeedBack = () => {
   return (
@@ -11,7 +9,9 @@ const FeedBack = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col gap-6 lg:flex-row`}
+        className={
+          "styles.2xl:max-w-[1280px] mx-auto flex w-full flex-col gap-6 lg:flex-row"
+        }
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}

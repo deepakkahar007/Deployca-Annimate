@@ -1,14 +1,12 @@
-import styles from "../styles";
-
 type StartStepsType = {
   number: number | string;
   text: string;
 };
 
 const StartSteps = ({ number, text }: StartStepsType) => (
-  <div className={`${styles.flexCenter} flex-row`}>
+  <div className={`flex flex-row items-center justify-center`}>
     <div
-      className={`${styles.flexCenter} h-[70px] w-[70px] rounded-[24px] bg-[#323F5D]`}
+      className={`flex h-[70px] w-[70px] items-center justify-center rounded-[24px] bg-[#323F5D]`}
     >
       <p className="text-[20px] font-bold text-white">{number}</p>
     </div>

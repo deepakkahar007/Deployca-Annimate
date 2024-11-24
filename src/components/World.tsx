@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import styles from "../styles";
 import { staggerContainer, fadeIn } from "../utils/motion";
 import { TitleText, TypingText } from "./TypingText";
 
@@ -11,7 +10,7 @@ const World = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
+        className={`styles.2xl:max-w-[1280px] mx-auto flex w-full flex-col`}
       >
         <TypingText title="| People on the world" textStyles="text-center" />
         <TitleText

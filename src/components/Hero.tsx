@@ -1,21 +1,20 @@
 import { motion } from "framer-motion";
-import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section className={`${styles.yPaddings} pl-6 sm:pl-16`}>
+    <section className={`xs:py-8 py-12 pl-6 sm:py-16 sm:pl-16`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
+        className={`styles.2xl:max-w-[1280px] mx-auto flex w-full flex-col`}
       >
         <div className="relative z-10 flex flex-col items-center justify-center">
           <motion.h1
             variants={textVariant(1.1)}
-            className={`${styles.heroHeading}`}
+            className={`text-[44px] font-bold uppercase leading-[64.4px] text-white sm:text-[60px] sm:leading-[74.4px] md:text-[100px] md:leading-[114.4px] lg:text-[144px] lg:leading-[158.4px]`}
           >
             Deployca
           </motion.h1>
@@ -23,9 +22,25 @@ const Hero = () => {
             variants={textVariant(1.2)}
             className="flex flex-row items-center justify-center"
           >
-            <h1 className={`${styles.heroHeading}`}>Ma</h1>
-            <div className={`${styles.heroDText}`} />
-            <h1 className={`${styles.heroHeading}`}>ness</h1>
+            <h1
+              className={
+                "text-[44px] font-bold uppercase leading-[64.4px] text-white sm:text-[60px] sm:leading-[74.4px] md:text-[100px] md:leading-[114.4px] lg:text-[144px] lg:leading-[158.4px]"
+              }
+            >
+              Ma
+            </h1>
+            <div
+              className={
+                "mx-[6px] h-[38px] w-[60px] rounded-r-[50px] border-[9px] border-white sm:mx-2 sm:h-[48px] sm:w-[80px] md:h-[108px] md:w-[212px] md:border-[18px]"
+              }
+            />
+            <h1
+              className={
+                "text-[44px] font-bold uppercase leading-[64.4px] text-white sm:text-[60px] sm:leading-[74.4px] md:text-[100px] md:leading-[114.4px] lg:text-[144px] lg:leading-[158.4px]"
+              }
+            >
+              ness
+            </h1>
           </motion.div>
         </div>
         <motion.div

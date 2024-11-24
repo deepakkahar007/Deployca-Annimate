@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { footerVariants } from "../utils/motion";
-import styles from "../styles";
 import { socials } from "../constants";
 
 const Footer = () => (
@@ -8,10 +7,12 @@ const Footer = () => (
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} relative py-8`}
+    className={`relative px-6 py-8 sm:px-16`}
   >
     <div className="footer-gradient" />
-    <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
+    <div
+      className={`styles.2xl:max-w-[1280px] mx-auto flex w-full flex-col gap-8`}
+    >
       <div className="flex flex-wrap items-center justify-between gap-5">
         <h4 className="text-[44px] font-bold text-white md:text-[64px]">
           Enter the Deployca

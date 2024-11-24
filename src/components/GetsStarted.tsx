@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import styles from "../styles";
 import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
 
 import { startingFeatures } from "../constants";
@@ -8,17 +7,17 @@ import StartSteps from "./StartSteps";
 
 const GetsStarted = () => {
   return (
-    <section className={`${styles.paddings} relative z-10`}>
+    <section className={`xs:p-8 relative z-10 px-6 py-12 sm:p-16`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col gap-8 lg:flex-row`}
+        className={`styles.2xl:max-w-[1280px] mx-auto flex w-full flex-col gap-8 lg:flex-row`}
       >
         <motion.div
           variants={planetVariants("left")}
-          className={`flex-1 ${styles.flexCenter}`}
+          className={`flex flex-1 items-center justify-center`}
         >
           <img
             src="/get-started.png"

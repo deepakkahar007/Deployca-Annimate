@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "../styles";
 import { staggerContainer } from "../utils/motion";
-
 import { TypingText, TitleText } from "./TypingText";
 import InsightCard from "./InsightCard";
 import { insights } from "../constants";
@@ -14,7 +12,7 @@ const Insight = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
+        className={`styles.2xl:max-w-[1280px] mx-auto flex w-full flex-col`}
       >
         <TypingText title="| Insight" textStyles="text-center" />
         <TitleText title="Insight about Deployca" textStyles="text-center" />

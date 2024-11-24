@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import styles from "../styles";
 import { fadeIn } from "../utils/motion";
 
 type ExploreCardType = {
@@ -39,7 +38,7 @@ const ExploreCard = ({
       ) : (
         <div className="absolute bottom-0 flex w-full flex-col justify-start rounded-b-[24px] bg-[rgba(0,0,0,0.5)] p-8">
           <div
-            className={`${styles.flexCenter} glassmorphism mb-[16px] h-[60px] w-[60px] rounded-[24px]`}
+            className={`glassmorphism mb-[16px] flex h-[60px] w-[60px] items-center justify-center rounded-[24px]`}
           >
             <img
               src="/headset.svg"

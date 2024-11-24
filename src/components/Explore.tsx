@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import styles from "../styles";
-
 import { staggerContainer } from "../utils/motion";
 import ExploreCard from "./ExploreCard";
-
 import { exploreWorlds } from "../constants";
 import { TitleText, TypingText } from "./TypingText";
 
@@ -12,13 +9,13 @@ const Explore = () => {
   const [active, setActive] = useState("world-2");
 
   return (
-    <section className={`${styles.paddings}`} id="explore">
+    <section className={`xs:p-8 px-6 py-12 sm:p-16`} id="explore">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
+        className={`styles.2xl:max-w-[1280px] mx-auto flex w-full flex-col`}
       >
         <TypingText title="| The World" textStyles="text-center" />
         <TitleText
